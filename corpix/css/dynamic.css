@@ -1,0 +1,328 @@
+@charset "UTF-8";
+body {
+    font-family: var(--corpix-content-font-family);
+    font-size: var(--corpix-content-font-size);
+    line-height: var(--corpix-content-line-height);
+    font-weight: var(--corpix-content-font-weight);
+    color: var(--corpix-content-color);
+    background: var(--corpix-body-background);
+}
+h1, h2, h3, h4, h5, h6, h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-family: var(--corpix-header-font-family);
+    font-weight: var(--corpix-header-font-weight);
+    color: var(--corpix-header-font-color);
+}
+h1, h1 span, h1 a {
+    font-family: var(--corpix-h1-font-family);
+    font-size: var(--corpix-h1-font-size);
+    line-height: var(--corpix-h1-line-height);
+    font-weight: var(--corpix-h1-font-weight);
+    text-transform: var(--corpix-h1-text-transform);
+}
+h2, h2 span, h2 a {
+    font-family: var(--corpix-h2-font-family);
+    font-size: var(--corpix-h2-font-size);
+    line-height: var(--corpix-h2-line-height);
+    font-weight: var(--corpix-h2-font-weight);
+    text-transform: var(--corpix-h2-text-transform);
+}
+h3, h3 span, h3 a {
+    font-family: var(--corpix-h3-font-family);
+    font-size: var(--corpix-h3-font-size);
+    line-height: var(--corpix-h3-line-height);
+    font-weight: var(--corpix-h3-font-weight);
+    text-transform: var(--corpix-h3-text-transform);
+}
+h4, h4 span, h4 a {
+    font-family: var(--corpix-h4-font-family);
+    font-size: var(--corpix-h4-font-size);
+    line-height: var(--corpix-h4-line-height);
+    font-weight: var(--corpix-h4-font-weight);
+    text-transform: var(--corpix-h4-text-transform);
+}
+h5, h5 span, h5 a {
+    font-family: var(--corpix-h5-font-family);
+    font-size: var(--corpix-h5-font-size);
+    line-height: var(--corpix-h5-line-height);
+    font-weight: var(--corpix-h5-font-weight);
+    text-transform: var(--corpix-h5-text-transform);
+}
+h6, h6 span, h6 a {
+    font-family: var(--corpix-h6-font-family);
+    font-size: var(--corpix-h6-font-size);
+    line-height: var(--corpix-h6-line-height);
+    font-weight: var(--corpix-h6-font-weight);
+    text-transform: var(--corpix-h6-text-transform);
+}
+.corpix-btn{
+    font-family: var(--corpix-header-font-family);
+}
+ol.commentlist:after {
+    background: var(--corpix-body-background);
+}
+body.elementor-page main .tpc-container.tpc-content-sidebar, body.elementor-editor-active main .tpc-container.tpc-content-sidebar, body.elementor-editor-preview main .tpc-container.tpc-content-sidebar {
+    max-width: var(--corpix-elementor-container-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+/*body.single main .tpc-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1300px;
+}*/
+
+/* ==================== ↓ Content Font ==================== */
+
+input:not([type='checkbox']):not([type='submit']), select, textarea, label, blockquote cite, .title-wrapper, .widget .post_count, ul.wp-block-archives li .post_count, .author-widget_text, .tagcloud, .wp-block-tag-cloud, body .comment-form-cookies-consent>label, .corpix_banner-widget .banner-widget_button .banner-widget__link, .elementor-widget-tpc-pricing-table .pricing_header .pricing_desc, .elementor-widget-tpc-time-line-vertical .time_line-content .time_line-text, .single_meta .social-shares-wrapper>span.share_title, .social-shares-wrapper>span, .recent-posts-widget .meta-data span, .prev-link-info_wrapper .meta-data, .next-link-info_wrapper .meta-data, .wp-block-latest-comments__comment-date, .wp-block-latest-posts__post-author, .wp-block-latest-posts__post-date, .widget_rss li .rssSummary, .widget_rss li .rss-date, .widget_rss li cite, .widget_text .textwidget, .comments-title .number-comments, .corpix_banner-widget .banner-widget_text_sub, .corpix_banner-widget .banner-widget_text, .single-team .single_team_page .team-info_item h5, .tpc-working-hours .working-item .working-item_day, .tpc-working-hours .working-item .working-item_hours {
+    font-family: var(--corpix-content-font-family);
+}
+.elementor-widget-tpc-time-line-vertical .time_line-content .time_line-text {
+    font-weight: var(--corpix-content-font-weight);
+}
+select, body .footer .select__field:before, .widget_rss .rssSummary, .header_search.search_standard .header_search-field .search-field, .search-no-results .page_404_wrapper .search-form .search-field, .recent-posts-widget .meta-data a:hover, .widget .recent-post-content, .isotope-filter a, .tpc-carousel .vertical_navigation, .tagcloud a, .wp-block-tag-cloud a, .blog-style-hero .blog-post.format-standard .meta-data, .blog-style-hero .blog-post.format-link .meta-data, .blog-style-hero .blog-post.format-audio .meta-data, .blog-style-hero .blog-post.format-quote .meta-data, .blog-style-hero .blog-post.format-standard .meta-data a, .blog-style-hero .blog-post.format-link .meta-data a, .blog-style-hero .blog-post.format-audio .meta-data a, .blog-style-hero .blog-post.format-quote .meta-data a, .blog-style-hero .blog-post.format-standard .blog-post_text, .blog-style-hero .blog-post.format-link .blog-post_text, .blog-style-hero .blog-post.format-audio .blog-post_text, .blog-style-hero .blog-post.format-quote .blog-post_text {
+    color: var(--corpix-content-color);
+}
+::placeholder {
+    color: var(--corpix-content-color)!important;
+    font-weight: var(--corpix-content-font-weight)!important;
+}
+.corpix_module_title .external_link .button-read-more {
+    line-height: var(--corpix-content-line-height);
+}
+/* ==================== ↓ Heading Font ==================== */
+
+.blog-post_cats, .blog-posts .blog-post_title, .column1 .item_title a, .corpix_twitter .twitt_title, .tagcloud-wrapper .title_tags, .strip_template .strip-item a span, .single_team_page .team-single_speaches-info .speech-info_desc span, .tpc_module_team .team-item_excerpt, .shortcode_tab_item_title, .index_number, .primary-nav.footer-menu .menu-item a, .archive__heading .archive__tax_description {
+    font-family: var(--corpix-header-font-family);
+    font-weight: var(--corpix-header-font-weight);
+}
+.theme-header-font, input[type='submit'], button, #comments .comment-reply-link, legend, .widget, .wp-block-calendar table, .banner_404, .page_404_wrapper .corpix_404__link, .page-header_breadcrumbs, .blog-post_text-bg, .blog-post_quote-author, .isotope-filter a .number_filter, .button-read-more, .tpc-countdown .countdown-section .countdown-period, .tpc-pricing_plan .pricing_price .price_decimal, .mashsb-count .counts, .mashsb-box .mashsb-buttons a .text, .heading_subtitle, .info_prev-link_wrapper a, .info_next-link_wrapper a, .isotope-filter a, body .comment-respond .comment-reply-title, .load_more_item, .page-header_title, .elementor-drop-cap, ul.wp-block-archives.wp-block-archives-list li a, ul.wp-block-categories.wp-block-categories-list li a, ul.wp-block-latest-posts li a, .elementor-counter, .tpc-pricing_plan .pricing_highlighter, #comments .commentlist .comment_author_says, .tpc_module_team .team-department, .single_team_page .highlighted, .tpc-button, .tpc-testimonials .tpc-testimonials_date, .tpc-testimonials .tpc-testimonials_position, .single-team .single_team_page .team-info_item.department, .elementor-widget-tpc-info-box .tpc-infobox .tpc-infobox_subtitle, .tpc-service-1 .tpc-service_subtitle, .wpcf7 .wpcf7-submit, .tpc-progress_bar .progress_label_wrap {
+    font-family: var(--corpix-header-font-family);
+}
+.banner_404, .author-info_public, .wpcf7 .tpc-custom-form input[type='submit'] {
+    font-family: var(--corpix-header-font-family);
+    color: var(--corpix-header-font-color);
+}
+.tpc-double_heading .dbl__subtitle, .tpc-rotated_text .tpc__subtitle, .tpc-rotated_text .tpc__title-wrapper, .elementor-section.tpc-add-background-text:before {
+    font-family: var(--corpix-header-font-family);
+    font-weight: var(--corpix-header-font-weight);
+}
+.theme-header-color, body .footer select option, button, blockquote, #comments .comment-reply-link, .blog-style-hero .blog-post_title a, h3#reply-title a, .calendar_wrap tbody, .comment_author_says, .comment_author_says a, .search-field, .tpc-pagination .page .post-page-link:hover, .tpc-pagination .post-page-numbers .page-numbers:hover, .tpc-pagination .post-page-numbers .post-page-link:hover, .tpc-pagination .page .post-page-link.current, .tpc-pagination .post-page-numbers .page-numbers.current, .tpc-pagination .post-page-numbers .post-page-link.current, .woocommerce nav.woocommerce-pagination ul li a:hover, .tagcloud-wrapper .title_tags, .tpc-pricing_plan .pricing_plan_wrap .pricing_content>ul>li>b, .prev-link-info_wrapper, .next-link-info_wrapper, .share_social-wpapper .share_social-title, .item_title a, .single_meta .social-shares-wrapper>span.share_title, .social-shares-wrapper>span, .tpc_module_title.item_title .carousel_arrows a span:after, .blog-style-hero .blog-post.format-standard .blog-post_title a, .blog-style-hero .blog-post.format-link .blog-post_title a, .blog-style-hero .blog-post.format-audio .blog-post_title a, .blog-style-hero .blog-post.format-quote .blog-post_title a, .author-info_social-wrapper .author-info_social-link.fa, .page_404_wrapper .search-form:after, .tpc-carousel .slick-arrow, .tpc-header-row-section_top a:hover, .tpc_module_team .team__image-wrapper .team__icons .team-icon:hover, .post-type-archive-team .team-icon, .single-team .single_team_page .team__icons .team-icon:hover, .header_search.search_standard .header_search-field .search-form:after, .tpc-views {
+    color: var(--corpix-header-font-color);
+}
+.widget ul li, .calendar_wrap thead, .wp-block-calendar thead, ul.wp-block-archives.wp-block-archives-list li a, ul.wp-block-categories.wp-block-categories-list li a, ul.wp-block-latest-posts li a, .widget .title, .widget_search .search-form:after, .widget_search .woocommerce-product-search:after, .widget_product_search .search-form:after, .widget_product_search .woocommerce-product-search:after, .corpix_banner-widget .banner-widget_button, .wp-block-calendar #today>a:hover, .wp-block-calendar tfoot a:hover {
+    color: var(--corpix-header-font-color);
+}
+.widget ul li a {
+    color: var(--corpix-content-color);
+}
+.widget_search .search-form:hover:after, .widget_search .woocommerce-product-search:hover:after, .widget_product_search .search-form:hover:after, .widget_product_search .woocommerce-product-search:hover:after, .page-link .post-page-numbers:after, .corpix_module_title .carousel_arrows a span, .highlighter.header, .page_404_wrapper .search-form:hover:after, .elementor-widget-container .elementor-swiper-button:hover {
+    background: var(--corpix-header-font-color);
+}
+ .wpcf7 .faq .submit-wrapper:hover:after {
+    background-color: var(--corpix-header-font-color);
+}
+.corpix_module_title .carousel_arrows a span:before, .tpc-pricing_plan .pricing_highlighter {
+    border-color: var(--corpix-header-font-color);
+}
+/* ==================== ↓ Additional Font ==================== */
+
+.single_team_page .highlighted {
+    font-family: var(--corpix-additional-font-family);
+    font-weight: var(--corpix-additional-font-weight);
+}
+.tpc-background-text, .tpc-pricing_plan .pricing_title {
+    font-family: var(--corpix-additional-font-family);
+}
+/* ==================== ↓ Extra ==================== */
+
+#scroll_up {
+    color: var(--corpix-back-to-top-color);
+    background-color: var(--corpix-back-to-top-background);
+}
+#scroll_up:not(:empty):hover {
+    color: var(--corpix-back-to-top-background);
+    background-color: var(--corpix-back-to-top-color);
+}
+.primary-nav>div>ul, .primary-nav>ul, .sitepress_container>.wpml-ls li, .primary-nav ul li.mega-menu-links>ul>li {
+    font-family: var(--corpix-menu-font-family);
+    font-size: var(--corpix-menu-font-size);
+    line-height: var(--corpix-menu-line-height);
+    font-weight: var(--corpix-menu-font-weight);
+}
+.primary-nav ul li ul, .wpml-ls, .sitepress_container>.wpml-ls ul ul li, .primary-nav ul li div.mega-menu-container {
+    font-family: var(--corpix-submenu-font-family);
+    font-size: var(--corpix-submenu-font-size);
+    line-height: var(--corpix-submenu-line-height);
+    font-weight: var(--corpix-submenu-font-weight);
+}
+.tpc-theme-header .header_search-field, .primary-nav ul li ul, .primary-nav ul li div.mega-menu-container, .tpc-theme-header .woo_mini_cart, .wpml-ls-legacy-dropdown .wpml-ls-current-language .wpml-ls-sub-menu {
+    color: var(--corpix-submenu-color);
+    background-color: var(--corpix-submenu-background);
+}
+.primary-nav ul li ul, .primary-nav ul li div.mega-menu-container {
+    border-bottom-color: var(--corpix-submenu-color);
+}
+.mobile_nav_wrapper, .tpc-menu_outer, .tpc-menu_outer .mobile-hamburger-close, .mobile_nav_wrapper .primary-nav ul li ul.sub-menu, .mobile_nav_wrapper .primary-nav ul li.mega-menu-links>ul.mega-menu>li>ul>li ul, .mobile_nav_wrapper .primary-nav ul li.mega-menu-links>ul.mega-menu>li>ul {
+    color: var(--corpix-submenu-mobile-color);
+    background-color: var(--corpix-submenu-mobile-background);
+}
+.mobile_nav_wrapper .tpc-menu_overlay {
+    background-color: var(--corpix-submenu-mobile-overlay);
+}
+#side-panel .widget .title {
+    color: var(--corpix-sidepanel-title-color);
+}
+/* ==================== ↓ Primary Color ==================== */
+
+.theme-primary-color, a, a:hover .tpc-icon, .tpc-icon:hover, ol>li:before, ul.corpix_plus li:before, ul.corpix_hyphen li:before, h3#reply-title a:hover, ul.corpix_check li:before, header.searсh-header .page-title span, #comments>h3 span, #comments .comment-edit-link, .author-info_social-wrapper, .blog-post_title i, .blog-style-standard .blog-post:hover .blog-post_wrapper .blog-post_meta_info .meta-data span, .blog-post.format-standard.link .blog-post_title:before, .share_post-container:hover>a, .copyright a:hover, .comment_author_says a:hover, .corpix_submit_wrapper:hover>i, .corpix_custom_button i, .corpix_custom_text a, .corpix_twitter a, .header_search .header_search-button>i:hover, .header_search-field .search-form:after, .mc_form_inside #mc_signup_submit:hover, .share_link span.fa:hover, .share_post span.fa:hover, .tpc-likes .sl-button:hover, .wpml-ls a:hover, .wpml-ls-legacy-dropdown .wpml-ls-current-language:hover>a, .wpml-ls-legacy-dropdown .wpml-ls-current-language a:hover, .isotope-filter a:after, .single_type-1 .single_meta .post_author a:hover, .single_type-2 .single_meta .post_author a:hover, .meta-data a:hover, ul.wp-block-archives.wp-block-archives-list li a:hover, ul.wp-block-categories.wp-block-categories-list li a:hover, ul.wp-block-latest-posts li a:hover, .author-info_social-wrapper .author-info_social-link.fa:hover, .format-quote .blog-post_wrapper .blog-post_media_part:before, .blog-post.format-quote .blog-post_quote-author, .blog-post_link .link_post:hover, .share_post-container:hover i, .elementor-widget-container .elementor-swiper-button, .page-header_breadcrumbs .breadcrumbs a:hover, .breadcrumbs a:hover, .post_date, blockquote cite, blockquote cite a, code, tt, kbd, .wpcf7 .label-mail:before, .wpcf7 .label-name:before, .wpcf7 .label-phone:before, .wpcf7 .label-url:before, .wpcf7 .label-textarea:before, body .comment-respond div label, body .comment-respond label[for='comment']:after, body .comment-respond label[for='email']:after, body .comment-respond label[for='author']:after, .woocommerce table.shop_table td.actions .coupon label:after, .banner_404__digit, .isotope-filter a:hover, .isotope-filter a.active, ul.wp-block-archives.wp-block-archives-list li:before, .tpc-page-socials .social__link:hover, .tpc-page-socials .social__name, .tpc-testimonials .tpc-testimonials_item:before, .archive__tax_title>span, .tpc-carousel .vertical_navigation:hover, .blog-post_quote-text:before {
+    color: var(--corpix-primary-color);
+    transition: all 0.4s;
+}
+.single-team .single_team_page .team-info_item.department, .single-team .single_team_page .team__icons .team-icon, .tpc_module_team .team__image-wrapper .team__icons .team-icon,  .tpc-carousel.arrows_center_mode .slick-prev:hover:after, .tpc-services-2 .tpc-services_media-wrap .elementor-icon, .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta a:hover {
+    color: var(--corpix-primary-color);
+    transition: all 0.4s;
+}
+.corpix_widget>ul li:hover:before, .widget_rss ul li .rsswidget:hover, .widget_recent_entries ul li .post-date, .widget_nav_menu li.current-menu-ancestor>a, .widget_nav_menu li.current-menu-item>a, .recent-posts-widget .post__link:hover .post__title, .recent-posts-widget .meta-data a, .widget ul li a:hover, .widget.corpix_widget.corpix_banner-widget .banner-widget_text .tags_title:after, .widget.widget_recent_comments ul li span.comment-author-link a:hover, .isotope-filter a .number_filter, .widget_meta.widget ul li a:before, .widget_recent_entries>ul>li>a:hover:before, ul.wp-block-latest-posts li a:hover:before, .wp-block-calendar tfoot a, .wp-block-rss a:hover {
+    color: var(--corpix-primary-color);
+/*    transition: all 0.4s;*/
+}
+.tpc-theme-header .lavalamp-object, .primary-nav>ul>li:hover>a, .primary-nav ul li ul li>a:hover, .primary-nav>ul>li.menu-item-has-children:hover>a>i.menu-item__plus, .primary-nav>ul>li.mega-menu.mega-cat:hover>a>i.menu-item__plus, .primary-nav>ul>li[class*='current']>a, .primary-nav ul li ul li[class*='current']>a, .primary-nav ul li[class*='current']>a>.menu-item__plus, .primary-nav ul li ul li[class*='current']>a>.menu-item__plus, .mobile_nav_wrapper .primary-nav ul .menu-item.current-menu-item>a, .mobile_nav_wrapper .primary-nav li.menu-item.current-menu-ancestor>a, .mobile_nav_wrapper .primary-nav>ul>li.current_page_item>a {
+    color: var(--corpix-primary-color);
+/*    transition: all 0.4s;*/
+position: relative;
+}
+.primary-nav ul li.mega-menu.mega-cat div.mega-menu-container ul.mega-menu.cats-horizontal>li.is-active>a, .mobile_nav_wrapper .primary-nav>ul>li>a>span:after, .primary-nav ul li ul li>a span:before {
+    background: var(--corpix-primary-color);
+}
+header .header-link:hover, .hover_links:not(.white) a:hover {
+    color: var(--corpix-secondary-color) !important;
+    transition: all 0.4s;
+}
+.hover_links:not(.white) a:hover {
+    -webkit-text-decoration-color: var(--corpix-secondary-color);
+    text-decoration-color: var(--corpix-secondary-color);
+}
+.tpc-video_popup .videobox_link {
+    width: 56px;
+    height: 56px;
+    background-color: #ffffff;
+}
+
+/* ==================== ↓ Background ==================== */
+
+ul.corpix_dot li:before, #multiscroll-nav span, #multiscroll-nav li .active span, .blog-style-hero .btn-read-more .blog-post-read-more, .share_post-container .share_post:hover .fab, .wpml-ls-legacy-dropdown .wpml-ls-sub-menu .wpml-ls-item a span:before, ul.wp-block-categories.wp-block-categories-list li a:hover:after, .prev-link_wrapper .image_prev:after, .next-link_wrapper .image_next:after, .tpc_module_team .team__icons:hover .team__icons-plus, .tpc_module_team .team__icons-plus:before, .tpc_module_team .team__icons-plus:after, .elementor-slick-slider .slick-slider .slick-next, .elementor-slick-slider .slick-slider .slick-prev, .footer .wpcf7 .footer-submit:hover:before, .team-single_wrapper.team-morph:before, .tpc_module_team.team-morph .team-item_wrap:hover:before, .widget ul li a:hover>.post_count, ul.wp-block-archives li a:hover>.post_count, .tpc-carousel .slick-arrow:hover, .tpc-pagination .page span.current, .tpc-pagination .post-page-numbers span.current {
+    background: var(--corpix-primary-color);
+}
+#comments>h3:after, button:hover, mark, .button-read-more:before, .button-read-more:after, .highlighter.primary, .header_search .header_search-field .header_search-button-wrapper, .header_search.search_mobile_menu .header_search-field .search-form:after, .tpc-theme-header .tpc-button, .sitepress_container>.wpml-ls ul ul li a:hover:after, .blog-style-hero .blog-post-hero_wrapper .divider_post_info, .calendar_wrap caption, .comment-reply-title:after, .corpix_module_title:after, .corpix_module_title .carousel_arrows a:hover span, .mc_form_inside #mc_signup_submit, .slick-dots li button, .tpc-carousel .slick-dots li button:before, .tpc-ellipsis span, .tpc_module_title.item_title .carousel_arrows a:hover, .elementor-slick-slider .slick-slider .slick-prev:hover, .elementor-slick-slider .slick-slider .slick-next:hover, .elementor-slick-slider .slick-slider .slick-prev:focus, .elementor-slick-slider .slick-slider .slick-next:focus, .inside_image.offset_animation:before, .title-wrapper .title:before, .tpc-page-socials .social__link.custom, .tpc-theme-header .login-in.learnpress .login-in_wrapper a:hover, .tpc-theme-header .login-in.woocommerce .login-in_wrapper a {
+    background-color: var(--corpix-primary-color);
+}
+aside>.widget+.widget:before, .widget_meta ul li a:hover:after, .widget_product_categories ul li a:hover:before, .widget_layered_nav ul li a:hover:before, .widget .calendar_wrap table td#today:before, .widget .calendar_wrap tbody td>a:before, .wp-block-calendar tbody td a:before, .widget .counter_posts, .widget_postshero .recent-posts-widget .post_cat a, .wp-block-calendar table caption {
+    background-color: var(--corpix-primary-color);
+}
+/* ==================== ↓ Background and Border ==================== */
+
+.tpc-carousel.navigation_offset_element .slick-prev:hover, .tpc-carousel.navigation_offset_element .slick-next:hover, .prev-link:hover, .next-link:hover {
+    border-color: var(--corpix-primary-color);
+    background: var(--corpix-primary-color);
+}
+/* ==================== ↓ Border ==================== */
+
+.header_search, .blog-post.format-quote .blog-post_quote-text, .blog-style-hero .format-no_featured .blog-post-hero_wrapper, .blog-style-hero .format-quote .blog-post-hero_wrapper, .blog-style-hero .format-audio .blog-post-hero_wrapper, .blog-style-hero .format-link .blog-post-hero_wrapper, .corpix_module_title .carousel_arrows a:hover span:before, .author-info_social-link:after, .author-widget_social a span, .tpc-carousel.pagination_circle_border li.slick-active button, .tpc-carousel.pagination_square_border li.slick-active button, .social-shares-wrapper .share_link .share-icon_animation{
+    border-color: var(--corpix-primary-color);
+}
+/* ==================== ↓ Shadow ==================== */
+
+[class|='dropcap'].primary.alt {
+    box-shadow: 5px 4px 13px 0 rgba(var(--corpix-primary-rgb), 0.45);
+}
+.corpix_banner-widget {
+    box-shadow: 11px 10px 38px 0 rgba(var(--corpix-secondary-rgb), 0.31);
+}
+/* ==================== ↓ Secondary Color ==================== */
+
+/*.theme-secondary-color, ul.corpix_check.secondary li:before, .post_categories span:not(:last-child) a:after, .blog-post_title>a:hover, .comment-respond .comment-form a:hover, #comments .comment-edit-link:hover, .author-widget_img-wrapper, .tpc_module_team .team__icons .team-icon:first-child, .tpc_module_team .team-title:hover {
+    color: var(--corpix-secondary-color);
+}*/
+
+.theme-secondary-color, ul.corpix_check.secondary li:before, .post_categories span:not(:last-child) a:after, .blog-post_title>a:hover, .comment-respond .comment-form a:hover, #comments .comment-edit-link:hover, .author-widget_img-wrapper, .tpc_module_team .team__icons .team-icon:first-child, .tpc_module_team .team-title:hover {
+    color: var(--corpix-primary-color);
+}
+.blog-post_link .link_post:before {
+    color: var(--corpix-primary-color)
+}
+blockquote:before {
+    color: var(--corpix-primary-color);
+}
+/*blockquote:before,*/
+
+.highlighter.secondary, .tpc-menu_outer .mobile-hamburger-close, ul.corpix_dot.secondary li:before, .tagcloud a:hover, .wp-block-tag-cloud a:hover, .widget .calendar_wrap tbody td>a:hover:before, .wp-block-calendar tbody td a:hover:before, .tpc-pagination .page .page-numbers.current:after, .tpc-pagination .post-page-numbers.current .page-link.post-page-link, .tpc-pagination .page .post-page-link.current:after, .tpc-pagination .post-page-numbers.current .page-numbers:after, .tpc-pagination .post-page-numbers.current .post-page-link:after, .woocommerce nav.woocommerce-pagination ul li span.current:after, .tpc-carousel.tpc-carousel_motion_style .tpc-carousel_wrap .tpc-testimonials_item:after, .format-video .blog-post_media .blog-post_media_part .videobox_link:hover, .tpc_module_team .team__icons .team-icon:hover, .tpc_module_team .team-item_wrap:hover .team__icons .team-icon:first-child, , .tpc_module_team .team-item_info:after {
+    background-color: var(--corpix-primary-color);
+}
+.tpc-pagination .post-page-numbers.current .page-link.post-page-link {
+    color: #fff;
+}
+.prev-link_wrapper:hover .image_prev.no_image:after, .next-link_wrapper:hover .image_next.no_image:after, .tpc-theme-header .login-in.learnpress .login-in_wrapper a, .tpc-theme-header .login-in.woocommerce .login-in_wrapper a:hover {
+    background: var(--corpix-secondary-color);
+}
+/* ==================== ↓ Tertiary color ==================== */
+
+.theme-tertiary-color, .highlighter.tertiary, .meta-data, .prev-link-info_wrapper .meta-data, .next-link-info_wrapper .meta-data, .wp-block-latest-comments__comment-date, .wp-block-latest-posts__post-author, .wp-block-latest-posts__post-date, .widget_rss li .rss-date, .widget_rss li cite, #comments .commentlist .comment .stand_comment .meta-data>span, #comments .commentlist .comment .stand_comment .meta-data>a, .archive__heading .archive__tax_description, .tpc_module_team .team-item_excerpt {
+    color: var(--corpix-tertiary-color);
+}
+/* ==================== ↓ Button Color ==================== */
+
+.elementor-widget-slider_revolution .rev_slider_button, .corpix_404__button .tpc-button, .wpcf7 .wpcf7-submit, .wpcf7 .home-1 .wpcf7-submit, .wpcf7 .home-4 .wpcf7-submit, .wpcf7 .coming-soon .wpcf7-submit, .wpcf7 .faq .wpcf7-submit, .wp-block-search__button, #comments input.submit, .load_more_wrapper .load_more_item, .woocommerce.single-product div.product div.images.woocommerce-product-gallery .woocommerce-product-gallery__trigger:hover, .corpix_banner-widget:hover .banner-widget_button, .corpix_banner-widget .banner-widget_button:hover, form.post-password-form input[type='submit'], .tpc-demo-item .tpc-button {
+    background-color: var(--corpix-button-color-idle);
+}
+.elementor-widget-slider_revolution .rev_slider_button:hover, .corpix_404__button .tpc-button:hover, .wpcf7 .wpcf7-submit:hover, #comments input.submit:hover, .wpcf7 .coming-soon .wpcf7-submit:hover, .wp-block-search__button:hover, .load_more_wrapper .load_more_item:hover, .woocommerce.single-product div.product div.images.woocommerce-product-gallery .woocommerce-product-gallery__trigger, form.post-password-form input[type='submit']:hover, .tpc-demo-item .tpc-button:hover {
+    background-color: var(--corpix-button-color-hover);
+}
+button, button:focus, button:active, #comments .comment-reply-link {
+    color: var(--corpix-button-color-idle);
+}
+.load_more_works, #comments .comment-reply-link:hover:before, .tpc-theme-header a.tpc-button {
+    background-color: var(--corpix-button-color-idle);
+}
+.search-button:hover+.search__icon, .tpc-theme-header a.tpc-button:hover {
+    background-color: var(--corpix-primary-color);
+}
+#comments .comment-reply-link:before {
+    background-color: rgba(var(--corpix-button-rgb-idle), 0.15);
+}
+.wpcf7 .home-1 .wpcf7-submit:hover, .wpcf7 .home-4 .wpcf7-submit:hover, .wpcf7 .faq .wpcf7-submit:hover {
+    background-color: rgba(var(--corpix-button-rgb-idle), 0.8);
+}
+/* ==================== ↓ Additional ==================== */
+
+.tpc-theme-header .login-in.learnpress .login-in_wrapper a:hover, .tpc-theme-header .login-in.woocommerce .login-in_wrapper a {
+    box-shadow: 5px 4px 13px 0 rgba(var(--corpix-primary-rgb), 0.45);
+}
+.tpc-theme-header .login-in.learnpress .login-in_wrapper a, .tpc-theme-header .login-in.woocommerce .login-in_wrapper a:hover {
+    box-shadow: 5px 4px 13px 0 rgba(var(--corpix-secondary-rgb), 0.45);
+}
+/* Footer CSS */
+
+.footer .recent-posts-widget .meta-data {
+    font-family: var(--corpix-content-font-family);
+}
+.footer_top-area .widget.widget_archive ul li>a:hover, .footer_top-area .widget.widget_categories ul li>a:hover, .footer_top-area .widget.widget_pages ul li>a:hover, .footer_top-area .widget.widget_meta ul li>a:hover, .footer_top-area .widget.widget_recent_comments ul li>a:hover, .footer_top-area .widget.widget_recent_entries ul li>a:hover, .footer_top-area .widget.widget_nav_menu ul li>a:hover, .footer_top-area .widget.widget_rt_posts .recent-posts-widget li>.recent-posts-content .post_title a:hover {
+    color: var(--corpix-primary-color);
+}
+.footer ul li:before, .footer_top-area a:hover {
+    color: var(--corpix-primary-color);
+}
+.footer_top-area .widget-title, .footer_top-area .widget_rss ul li .rsswidget, .footer_top-area .widget.widget_pages ul li a, .footer_top-area .widget_nav_menu a, .footer_top-area .widget.widget_rt_posts .recent-posts-widget li>.recent-posts-content .post_title a, .footer_top-area .widget.widget_archive ul li>a, .footer_top-area .widget.widget_categories ul li>a, .footer_top-area .widget.widget_pages ul li>a, .footer_top-area .widget.widget_meta ul li>a, .footer_top-area .widget.widget_recent_comments ul li>a, .footer_top-area .widget.widget_recent_entries ul li>a, .footer_top-area .widget.widget_archive ul li:before, .footer_top-area .widget.widget_categories ul li:before, .footer_top-area .calendar_wrap thead, .footer_top-area strong, .footer_top-area h1, .footer_top-area h2, .footer_top-area h3, .footer_top-area h4, .footer_top-area h5, .footer_top-area h6 {
+    color: var(--corpix-footer-heading-color);
+}
+.footer_top-area {
+    color: var(--corpix-footer-content-color);
+}
+.footer_top-area .widget.widget_archive ul li:after, .footer_top-area .widget.widget_pages ul li:after, .footer_top-area .widget.widget_meta ul li:after, .footer_top-area .widget.widget_recent_comments ul li:after, .footer_top-area .widget.widget_recent_entries ul li:after, .footer_top-area .widget.widget_nav_menu ul li:after, .footer_top-area .widget.widget_categories ul li:after {
+    background-color: var(--corpix-footer-content-color);
+}
+.footer .copyright {
+    color: var(--corpix-copyright-content-color);
+}
+.footer .wpcf7 form>p:last-of-type:after {
+    background-color: var(--corpix-primary-color);
+}

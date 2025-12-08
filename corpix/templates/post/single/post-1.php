@@ -1,0 +1,95 @@
+<?php
+
+$postID = get_the_ID();
+
+$single = Corpix_Single_Post::getInstance();
+$single->set_post_data();
+$single->set_image_data();
+$single->set_post_views($postID);
+
+$hide_all_meta = Corpix_Theme_Helper::get_option('single_meta');
+$use_author_info = Corpix_Theme_Helper::get_option('single_author_info');
+$use_tags = Corpix_Theme_Helper::get_option('single_meta_tags') && has_tag();
+$use_likes = Corpix_Theme_Helper::get_option('single_likes') && function_exists('tpc_simple_likes');
+$use_shares = Corpix_Theme_Helper::get_option('single_share') && function_exists('tpc_theme_helper');
+$use_views = Corpix_Theme_Helper::get_option('single_views');
+
+$has_media = $single->meta_info_render;
+
+$meta_date = $meta_data = $meta_likes = [];
+if (!$hide_all_meta) {
+    $meta_date['date'] = !Corpix_Theme_Helper::get_option('single_meta_date');
+    $meta_data['category'] = !Corpix_Theme_Helper::get_option('single_meta_categories');
+    $meta_data['author'] = !Corpix_Theme_Helper::get_option('single_meta_author');
+    $meta_data['comments'] = !Corpix_Theme_Helper::get_option('single_meta_comments');
+}
+$use_likes = Corpix_Theme_Helper::get_option('single_likes') && function_exists('tpc_simple_likes');
+$use_views = Corpix_Theme_Helper::get_option('single_views');
+
+// Render ?>
+<article class="blog-post blog-post-single-item format-<?php echo esc_attr($single->get_pf()); ?>">
+<div <?php post_class('single_meta'); ?>>
+<div class="item_wrapper">
+<div class="blog-post_content"><?php
+
+    // Date
+   // if ( !$hide_all_meta ) $single->render_post_meta($meta_date);
+
+    // Title ?>
+    <h1 class="blog-post_title"><?php echo get_the_title(); ?></h1>
+
+    <div class="post_meta-wrap"><?php
+
+    // Cats, Author, Comments
+    if ( !$hide_all_meta ) $single->render_post_meta_02($meta_data);
+
+    // Likes, Views
+    if ( $use_views || $use_likes ) { ?>
+        <div class="meta-data"><?php
+            // Views
+            echo ( (bool)$use_views ? $single->get_post_views($postID) : '' );
+            
+            // Likes
+            if ($use_likes) {
+                tpc_simple_likes()->likes_button($postID, 0);
+            } ?>
+        </div><?php
+    } ?>
+
+    </div><?php // meta-wrap
+
+    // Media
+    $single->render_featured();
+
+    // Content
+    the_content();
+
+    // Pagination
+    wp_link_pages(Corpix_Theme_Helper::pagination_wrapper());
+
+    if ( $use_tags || $use_shares ) { ?>
+        <div class="single_post_info"><?php
+
+            // Socials
+            if ($use_shares) {
+                tpc_theme_helper()->render_post_share();
+            }
+
+            // Tags
+            if ($use_tags) {
+                the_tags('<div class="tagcloud-wrapper"><div class="tagcloud">', ' ', '</div></div>');
+            }?>
+        </div><?php
+    }
+
+    // Author Info
+    if ($use_author_info) {
+    $single->render_author_info();
+    }?>
+
+    <div class="post_info-divider"></div>
+    <div class="clear"></div>
+</div><!--blog-post_content-->
+</div><!--item_wrapper-->
+</div>
+</article>
